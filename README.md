@@ -1,4 +1,4 @@
-\# Movie Recommender System
+\# 🎬 Movie Recommender System
 
 
 
@@ -6,57 +6,57 @@ An AI/ML-based movie recommendation system built using Python, Scikit-learn, Fas
 
 
 
-\## Features
+\## 🚀 Features
 
 
 
-\* Movie recommendations using TF-IDF-based content similarity
+\- Movie recommendations using TF-IDF-based content similarity
 
-\* Movie search using the TMDB API
+\- Movie search using the TMDB API
 
-\* Popular and trending movie listings
+\- Popular and trending movie listings
 
-\* Genre-based recommendations
+\- Genre-based recommendations
 
-\* Movie details
+\- Movie details
 
-\* FastAPI REST API
+\- FastAPI REST API
 
-\* Interactive Streamlit frontend
+\- Interactive Streamlit frontend
 
-\* Environment-based API key management
-
-
-
-\## Tech Stack
+\- Environment-based API key management
 
 
 
-\* Python
-
-\* FastAPI
-
-\* Uvicorn
-
-\* Streamlit
-
-\* Scikit-learn
-
-\* Pandas
-
-\* NumPy
-
-\* SciPy
-
-\* TMDB API
-
-\* httpx
-
-\* python-dotenv
+\## 🛠️ Tech Stack
 
 
 
-\## Machine Learning
+\- Python
+
+\- FastAPI
+
+\- Uvicorn
+
+\- Streamlit
+
+\- Scikit-learn
+
+\- Pandas
+
+\- NumPy
+
+\- SciPy
+
+\- TMDB API
+
+\- httpx
+
+\- python-dotenv
+
+
+
+\## 🤖 Machine Learning
 
 
 
@@ -64,51 +64,41 @@ The recommendation system uses TF-IDF (Term Frequency-Inverse Document Frequency
 
 
 
-The project includes data preprocessing, feature extraction, recommendation generation, API integration, and an interactive frontend.
+\## 📡 API Endpoints
 
 
-
-\## API Endpoints
-
-
-
-```text
 
 GET /health
 
+
+
 GET /home?category=popular\&limit=24
+
+
 
 GET /tmdb/search?query=...
 
+
+
 GET /movie/id/{tmdb\_id}
+
+
 
 GET /recommend/tfidf?title=...
 
+
+
 GET /recommend/genre?tmdb\_id=...
+
+
 
 GET /movie/search?query=...
 
-```
 
 
-
-FastAPI documentation:
-
+\## 📁 Project Structure
 
 
-```text
-
-http://127.0.0.1:8000/docs
-
-```
-
-
-
-\## Project Structure
-
-
-
-```text
 
 Movie-Recommender/
 
@@ -138,41 +128,29 @@ Movie-Recommender/
 
 └── .gitignore
 
-```
+
+
+\## ⚙️ Installation
 
 
 
-\## Installation
+Clone the repository:
 
 
-
-\### Clone the repository
-
-
-
-```bash
 
 git clone https://github.com/kajalbehera344/movie-recommender-ai.git
 
+
+
 cd movie-recommender-ai
 
-```
 
 
-
-\### Create a virtual environment
-
+Create a virtual environment:
 
 
-```bash
 
 python -m venv venv
-
-```
-
-
-
-\### Activate the virtual environment
 
 
 
@@ -180,63 +158,43 @@ For Windows PowerShell:
 
 
 
-```powershell
-
 .\\venv\\Scripts\\Activate.ps1
 
-```
 
 
-
-\### Install dependencies
-
+Install dependencies:
 
 
-```bash
 
 pip install -r requirements.txt
 
-```
+
+
+\## 🔑 Environment Variables
 
 
 
-\## Environment Variables
+Create a .env file:
 
 
-
-Create a .env file in the project folder:
-
-
-
-```text
 
 TMDB\_API\_KEY=your\_api\_key\_here
 
-```
+
+
+Do not upload your actual API key to GitHub.
 
 
 
-Do not upload your actual TMDB API key to GitHub.
+The .env file is excluded using .gitignore.
 
 
 
-The .env file should remain private and is excluded using .gitignore.
+\## ▶️ Run the Backend
 
 
-
-\## Run the Backend
-
-
-
-Start the FastAPI server:
-
-
-
-```bash
 
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
-```
 
 
 
@@ -244,15 +202,11 @@ The API will run at:
 
 
 
-```text
-
 http://127.0.0.1:8000
 
-```
 
 
-
-\## Run the Frontend
+\## 🖥️ Run the Frontend
 
 
 
@@ -260,37 +214,29 @@ Open another terminal and run:
 
 
 
-```bash
-
 streamlit run app.py
 
-```
+
+
+\## 📌 Project Highlights
 
 
 
-Streamlit will provide a local URL that you can open in your browser.
+\- Built an end-to-end AI/ML movie recommendation application.
+
+\- Implemented TF-IDF-based recommendation logic.
+
+\- Developed REST APIs using FastAPI.
+
+\- Integrated TMDB API for movie data and search.
+
+\- Created an interactive Streamlit interface.
+
+\- Used Pandas, NumPy, Scikit-learn, and SciPy for data processing and machine learning.
 
 
 
-\## Project Highlights
-
-
-
-\* Built an end-to-end AI/ML movie recommendation application.
-
-\* Implemented TF-IDF-based recommendation logic.
-
-\* Developed REST APIs using FastAPI.
-
-\* Integrated TMDB API for movie data and search.
-
-\* Created an interactive Streamlit interface.
-
-\* Used Pandas, NumPy, Scikit-learn, and SciPy for data processing and machine learning.
-
-
-
-\## Author
+\## 👩‍💻 Author
 
 
 
@@ -303,6 +249,4 @@ GitHub: https://github.com/kajalbehera344
 
 
 Project Repository: https://github.com/kajalbehera344/movie-recommender-ai
-
-
 
