@@ -1,4 +1,4 @@
-\# 🎬 Movie Recommender System
+\# Movie Recommender System
 
 
 
@@ -6,7 +6,7 @@ An AI/ML-based movie recommendation system built using Python, Scikit-learn, Fas
 
 
 
-\## 🚀 Features
+\## Features
 
 
 
@@ -28,39 +28,39 @@ An AI/ML-based movie recommendation system built using Python, Scikit-learn, Fas
 
 
 
-\## 🛠️ Tech Stack
+\## Tech Stack
 
 
 
-\* \*\*Python\*\*
+\* Python
 
-\* \*\*FastAPI\*\*
+\* FastAPI
 
-\* \*\*Uvicorn\*\*
+\* Uvicorn
 
-\* \*\*Streamlit\*\*
+\* Streamlit
 
-\* \*\*Scikit-learn\*\*
+\* Scikit-learn
 
-\* \*\*Pandas\*\*
+\* Pandas
 
-\* \*\*NumPy\*\*
+\* NumPy
 
-\* \*\*SciPy\*\*
+\* SciPy
 
-\* \*\*TMDB API\*\*
+\* TMDB API
 
-\* \*\*httpx\*\*
+\* httpx
 
-\* \*\*python-dotenv\*\*
-
-
-
-\## 🤖 Machine Learning
+\* python-dotenv
 
 
 
-The recommendation system uses \*\*TF-IDF (Term Frequency-Inverse Document Frequency)\*\* to convert movie information into numerical feature vectors and identify movies with similar content.
+\## Machine Learning
+
+
+
+The recommendation system uses TF-IDF (Term Frequency-Inverse Document Frequency) to convert movie information into numerical feature vectors and identify movies with similar content.
 
 
 
@@ -68,7 +68,7 @@ The project includes data preprocessing, feature extraction, recommendation gene
 
 
 
-\## 📡 API Endpoints
+\## API Endpoints
 
 
 
@@ -104,7 +104,7 @@ http://127.0.0.1:8000/docs
 
 
 
-\## 📁 Project Structure
+\## Project Structure
 
 
 
@@ -142,11 +142,11 @@ Movie-Recommender/
 
 
 
-\## ⚙️ Installation
+\## Installation
 
 
 
-Clone the repository:
+\### Clone the repository
 
 
 
@@ -160,7 +160,7 @@ cd movie-recommender-ai
 
 
 
-Create a virtual environment:
+\### Create a virtual environment
 
 
 
@@ -169,6 +169,10 @@ Create a virtual environment:
 python -m venv venv
 
 ```
+
+
+
+\### Activate the virtual environment
 
 
 
@@ -184,7 +188,7 @@ For Windows PowerShell:
 
 
 
-Install dependencies:
+\### Install dependencies
 
 
 
@@ -196,11 +200,11 @@ pip install -r requirements.txt
 
 
 
-\## 🔑 Environment Variables
+\## Environment Variables
 
 
 
-Create a `.env` file:
+Create a .env file in the project folder:
 
 
 
@@ -212,11 +216,19 @@ TMDB\_API\_KEY=your\_api\_key\_here
 
 
 
-Do \*\*not\*\* upload your actual API key to GitHub.
+Do not upload your actual TMDB API key to GitHub.
 
 
 
-\## ▶️ Run the Backend
+The .env file should remain private and is excluded using .gitignore.
+
+
+
+\## Run the Backend
+
+
+
+Start the FastAPI server:
 
 
 
@@ -228,7 +240,19 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 
 
-\## 🖥️ Run the Frontend
+The API will run at:
+
+
+
+```text
+
+http://127.0.0.1:8000
+
+```
+
+
+
+\## Run the Frontend
 
 
 
@@ -244,7 +268,11 @@ streamlit run app.py
 
 
 
-\## 📌 Project Highlights
+Streamlit will provide a local URL that you can open in your browser.
+
+
+
+\## Project Highlights
 
 
 
@@ -262,11 +290,11 @@ streamlit run app.py
 
 
 
-\## 👩‍💻 Author
+\## Author
 
 
 
-\*\*Kajal Behera\*\*
+Kajal Behera
 
 
 
